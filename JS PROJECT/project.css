@@ -1,0 +1,118 @@
+html{
+    width: 100%;
+    height: 100vh;
+}
+.head-bar{
+    position: fixed;
+    height: 10vh;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    cursor: pointer;
+   
+}
+/*#responsive-desktop, #responsive-laptop:hover, #responsive-tablet:hover, #responsive-phone-horizontal:hover, #responsive-phone:hover{
+    background-color: lightskyblue;
+}*/
+img[id^="responsive"]:hover, #responsive-desktop, .close:hover{
+    background-color: lightblue;
+}
+.menu-bar > a{
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    margin-top: 80px;
+}
+.menu-bar{
+    width: 35%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 100px;
+    padding: 15px;
+    font-size: 1.15rem;
+}
+.menu, .menu-bar a:hover{
+    color: gold;
+}
+.contact{
+    background-color: whitesmoke;
+    height: 80vh;
+    padding: 100px;
+}
+.contact-two{
+    width: 45%;
+    height: 50vh;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 50px;
+    z-index: -1;
+    margin-left: 600px; 
+    text-align: center;
+}
+.contact-two h2{
+    font-weight: 700;
+}
+.contact-two p a{
+    color: gold;
+    text-decoration: none;
+}
+.contact-two button{
+    background-color: rgb(9, 172, 9);
+    font-weight: 400;
+}
+.contact-two button a{
+    color: white; 
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+.sixgrid-container{
+    width: 100%;
+    height: 100vh;
+    padding: 80px;
+    text-align: center;
+}
+.sixgrid{
+    width: 85%;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    margin: 0 auto;
+}
+div[class^="box"]{ 
+    height: 35vh;
+    text-align: center;
+    border: 1px solid lightgray;
+    margin: 10px;
+}
+.svg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    background-color: goldenrod;
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text{
+   font-weight: 600;
+    font-size: 1.2rem;
+}
+.box-white:nth-child(n):nth-last-child(n){
+    background-color: rgb(7, 218, 7);
+    
+}
+.box-white{
+    color: white;
+}
+.freepik1{
+    color: rgb(11, 202, 11)
+}
+.free{
+    margin-top: 20px;
+}

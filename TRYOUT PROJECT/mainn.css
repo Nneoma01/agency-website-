@@ -1,0 +1,191 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width:100%;
+}
+.head{
+    letter-spacing: 12px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar{
+    display: flex;
+}
+a{
+    margin: 0 20px;            
+}
+.app{
+    height: 40px;
+    width: 150px;
+    background-color:  rgb(108, 14, 197);
+    color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(108, 14, 197);
+}
+.first-division{
+    text-align: left;
+    width: 47%;
+    background-color: rgb(238, 251, 251);
+    padding: 80px 0;
+}
+.first{
+    font-weight: 400;
+}
+.but{
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 130px;
+    border-radius: 5px;
+}
+.butt{
+    height: 40px;
+    width: 130px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+span{
+    font-size: 8px;
+}
+.second-division{
+    margin: 60px 0;
+}
+.second{
+    text-align: center;
+}
+h3{
+    font-weight: 500;
+    font-size: 25px;
+}
+.secondd, .seconddd, .secondddd{
+    text-align: center;
+}
+.circle, .circlee,.circleee{
+    height: 70px;
+    width: 70px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.sec{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px auto;
+}
+.learn{
+    height: 40px;
+    width: 200px;
+    background-color : rgb(108, 14, 197);
+    border: 1px solid rgb(108, 14, 197);
+    border-radius: 10px;
+    color: white;
+}
+.body{
+    display: flex;
+    justify-content: space-between;
+    margin: 200px 50px;
+}
+.bodyy{
+    margin: 0;  
+}
+.join{
+    background-color: rgb(108, 14, 197);
+    border: 1px solid  rgb(108, 14, 197);
+    border-radius: 10px;
+    color: white;
+    height: 40px;
+    width: 130px;
+}
+.contact{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 40px;
+    width: 130px;
+}
+.fill{
+    font-size: 50px;
+    font-weight: 500;
+}
+.program, .programm{
+    font-size: 15px;
+    font-weight: 500; 
+}
+.span{
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 20px; 
+} 
+.program, .spann{
+    border-bottom: 2px solid rgb(235, 231, 231);
+    padding-bottom: 10px;
+}
+.box{
+    display: flex;
+    margin-bottom: 20px;
+}
+.boxx{
+    height: 400px;
+    width: 70%;
+    background-color: black;
+    border-radius: 40px 0 0 40px;
+    margin-left: 150px;
+    transform: translateY(-60px);
+}
+.flow, li{
+    font-size: 13px;
+}
+.flows{
+    border: 1px solid rgb(213, 212, 212);
+    margin: 0;
+}
+li{
+    padding: 12px 0;
+}
+.flo{
+    color: rgb(108, 14, 197);
+}
+.upgrade{
+    width: 90%;
+    height: 400px;
+    background-color: rgb(232, 225, 237);
+    border-radius: 30px;
+    margin: 0 auto;
+}
+.upgrades{
+    text-align: center;
+    padding: 80px;
+}
+.secure{
+    font-weight: 500;
+    font-size: 40px;
+}
+.contacts{
+    background-color: rgb(232, 225, 237);
+    border: 1px solid  rgb(232, 225, 237);
+    border-radius: 10px;
+    height: 40px;
+    width: 130px;
+} 
+.heads{
+    font-weight: 500;
+}
+.group{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px 0;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(221, 220, 220);
+    padding: 15px 0;
+}
+.foots{
+    display: flex;
+}
+.foots p{
+    margin: 15px;
+}
+

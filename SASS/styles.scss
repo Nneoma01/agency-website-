@@ -1,0 +1,35 @@
+@import 'newColor';
+$new-padding: 1.5%;
+$text-alignment: center;
+$color: white;
+body{
+    background-color: black;
+    color: $color;
+}
+h1{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+p{
+    color: $bg-color;
+    font-style: italic;
+    padding: $new-padding;
+    text-align: $text-alignment;
+}
+nav{
+    ul{
+        list-style: none;
+        margin: 0.4%;
+        padding: 0;
+    }
+    li{
+        display: inline-block;
+        position: relative;
+        left: 700px;
+        margin: 2%;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+}
