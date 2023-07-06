@@ -17,7 +17,13 @@ const changeScreen = (scAttr) => {
     alert("desktop")
   } else if(scAttr === "1200px") {
     alert("laptop")
-  }
+  }else if(scAttr === "992px") {
+    alert("tablet")
+  }else if(scAttr === "576px") {
+    alert("phone-landscape")
+  }else if(scAttr === "480px") {
+    alert("phone-portrait")
+  }  
 }
 
 
