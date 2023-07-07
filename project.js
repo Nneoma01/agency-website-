@@ -26,7 +26,6 @@ const changeScreen = (scAttr) => {
   }  
 }
 
-
 screens.forEach(sc => {
   sc.addEventListener("click", e => {
     const scAttr = sc.getAttribute("data-screen")
