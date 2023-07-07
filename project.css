@@ -83,32 +83,19 @@ img[id^="responsive"]:hover, #responsive-desktop, .close:hover{
     text-decoration: none;
     font-weight: bold;
 }
-.sixgrid-container{
-   /* height: 100vh;*/
-    width: 100%;
+.container-fluid{
+    background-image: url("https://images01.nicepagecdn.com/a1389d7bc73adea1e1c1fb7e/e39b53000c675b9abef6df35/top-view-person-writing-laptop-with-copy-space.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: top center;
+    padding: 20px 40px;
 }
-.six-img{
-    width: 100%;
-    /*height: 100vh;*/
-    object-fit: cover;
-    overflow: hidden;
-    position: absolute;
-    z-index: -1;
-}
-.sixgrid{
-    width: 85%;
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 20px;
-    margin: 0 auto;
-    padding: 50px 0;
-}
+
 div[class^="box"]{ 
-    height: 35vh;
     text-align: center;
     border: 1px solid lightgray;
-    margin: 10px;
-    background-color: white;
+    /* margin: 10px; */
+   background-color: white;
 }
 .svg{
     width: 40px;
