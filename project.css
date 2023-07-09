@@ -175,18 +175,16 @@ div[class^="box"]{
     font-weight: bold;
     line-height: 40px;
 }
-.threegrid-container{
-    /*height: 100vh;*/
-    display: flex;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 50px auto;
-    padding-left: 100px;
-    column-gap: 40px;
+.grid{
+    height: 80vh;
+    text-align: center;
+}
+.grid h1{
+    margin-bottom: -100px;
+    font-weight: bold;
 }
 .onegrid, .twogrid, .threegrid{
     border: 1px solid lightgray;
-    width: 28%;
-    /*height: 40vh;*/
     padding: 35px;
 }
 .onegrid, .threegrid{
