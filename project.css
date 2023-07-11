@@ -14,6 +14,9 @@ a {
 .full-height {
     height: 100%;
 }
+.device-height {
+    height: 100vh;
+}
 .head-bar{
     position: fixed;
     top: 0;
@@ -92,19 +95,12 @@ img[id^="responsive"]:hover, #responsive-desktop, .close:hover{
     text-decoration: none;
     font-weight: bold;
 }
-.container-fluid{
+.services-section{
     background-image: url("https://images01.nicepagecdn.com/a1389d7bc73adea1e1c1fb7e/e39b53000c675b9abef6df35/top-view-person-writing-laptop-with-copy-space.jpg");
     background-size: cover;
     background-position: top center;
-    padding: 40px;
 }
-.fluid-wrapper{
-   height: 100vh;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-}
+
 div[class^="box"]{ 
     text-align: center;
     border: 1px solid lightgray;
@@ -283,10 +279,8 @@ div[class^="box"]{
 .div{
    color: rgb(11, 202, 11);
 }
-.section{
-    /*height: 130vh;*/
-    text-align: center;
-    padding: 40px;
+section {
+    padding: 60px 150px !important;
 }
 .team{
     font-size: 2.5rem;
