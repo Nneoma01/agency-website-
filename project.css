@@ -15,7 +15,7 @@ a {
     height: 100%;
 }
 .device-height {
-    height: 100vh;
+    min-height: 100vh;
 }
 .head-bar{
     position: fixed;
@@ -45,8 +45,7 @@ img[id^="responsive"]:hover, #responsive-desktop, .close:hover{
     width: 35%;
     height: 50px;
     display: flex;
-    justify-content: space-around;
-    margin-left: 100px;
+    justify-content: space-between;
     padding: 15px;
     font-size: 1.15rem;
 }
@@ -101,11 +100,12 @@ img[id^="responsive"]:hover, #responsive-desktop, .close:hover{
     background-position: top center;
 }
 
-div[class^="box"]{ 
+div.box{ 
     text-align: center;
     border: 1px solid lightgray;
     /* margin: 10px; */
    background-color: white;
+   padding: 20px 60px;
 }
 .svg{
     width: 40px;
@@ -121,10 +121,6 @@ div[class^="box"]{
 .text{
    font-weight: 600;
     font-size: 1.2rem;
-}
-
-.box {
-    padding: 20px 60px;
 }
 .box-white:nth-child(n):nth-last-child(n){
     background-color: #43c374;
@@ -172,16 +168,17 @@ div[class^="box"]{
     line-height: 40px;
 }
 .grid{
-    height: 80vh;
+    /* height: 80vh; */
     text-align: center;
 }
 .grid h1{
-    margin-bottom: -100px;
+    margin-bottom: 100px;
     font-weight: bold;
 }
 .onegrid, .twogrid, .threegrid{
     border: 1px solid lightgray;
     padding: 35px;
+    height: 300px;
 }
 .onegrid, .threegrid{
     color: white;
@@ -286,9 +283,9 @@ section {
     font-size: 2.5rem;
     font-weight: bolder;
 }
-span{
+/* span {
     color: goldenrod;   
-}
+} */
 .image-from{
     font-size: 1rem;
 }
@@ -378,28 +375,33 @@ span{
     color: rgb(111, 184, 111);
 }
 .image1{
-    width: 20px;
-    height: 20px;
-    margin: 200px 0; 
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    object-position:  center;
     border-radius: 50%;
 }
-.image1:hover{
-    animation: zoompic 2s linear;
+
+.reveal-effect{
+    visibility: hidden;
+}
+.reveal-effect-active{
+    visibility: visible;
+    animation: zoompic .7s linear;
 }
 @keyframes zoompic{
-    from{
+    0% {
         transform: scale(0, 0);
+        opacity: 0;
     }
-    to{
-        transform: scale(10, 10); 
+    50% {
+        transform: scale(0.5, 0.5);
+        opacity: 0.3;
+    }
+    100%{
+        transform: scale(1, 1); 
+        opacity: 1;
     } 
-}
-
-@media  and (max-width: 1000px) {
-     #responsive-desktop{
-        width: 100%;
-        margin: 0 auto;
-     }
 }
 
 
