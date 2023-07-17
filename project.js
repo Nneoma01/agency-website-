@@ -66,9 +66,35 @@ let isEleInView = (ele) => {
   );
 }
 
-const allRevealEffects  = document.querySelectorAll(".reveal-effect")
-console.log({allRevealEffects})
+const allRevealEffects = document.querySelectorAll(".reveal-effect")
+console.log({ allRevealEffects })
 
+const allCountNums = document.querySelectorAll(".count-num")
+
+const runCount = (dom, endNum) => {
+  let current = 0
+  dom.textContent = current
+
+  const atInterval = setInterval(() => {
+    // current++ // current = current + 1  
+    
+    if (dom.textContent < endNum) {
+      dom.textContent++ 
+    } 
+    // else {
+      // console.log("should end")
+      // return clearInterval(atInterval)
+    }
+
+    // if (current >= endNum) {
+    //   console.log("should end")
+    //   return clearInterval(atInterval)
+    // } else {
+    //   current++ // current = current + 1  
+    // }
+
+  }, 20);
+}
 
 window.addEventListener("scroll", ev => {
   allRevealEffects.forEach(element => {
@@ -76,20 +102,18 @@ window.addEventListener("scroll", ev => {
 
     if (isEleInView(element) && !isRevealActive) {
       element.classList.add("reveal-effect-active")
-    }
-    else if(!isEleInView(element) && isRevealActive) {
+    } else if (!isEleInView(element) && isRevealActive) {
       element.classList.remove("reveal-effect-active")
     }
   })
+
 })
 
+allCountNums.forEach(child => {
+  const endNum = Number(child.innertext)
+  const inView = isEleInView(child)
 
-// Number Countdown
-const count = document.querySelector(".count-num")
-console.log(typeof Number(count.innerText))
-
-const runCount = () =>{
-  for (let i = 0; i < Number(count.innerText); i++) {
+  if(inView){
+    runCount(child, endNum)
   }
-
-}
+})
