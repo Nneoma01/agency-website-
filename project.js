@@ -33,27 +33,6 @@ screens.forEach(sc => {
   })
 })
 
-/*let isEleInView = (ele) => {
-  const el = ele.getBoundingClientRect()
-}
-
-const allViewEffects = document.querySelectorAll(".reveal-view");
-console.log({allViewEffects})
-
-
-let isElInView = (ele) => {
-  const ele = ele.getBoundingClientRect()
-}
-
-return (
-  el.top >= 0 &&
-  el.left >= 0 &&
-  el.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-  el.right <= (window.innerWidth || document.documentElement.clientWidth)
-);
-
-const allRevealEffects  = document.querySelectorAll(".reveal-effect")
-console.log({allRevealEffects})*/
 
 let isEleInView = (ele) => {
   const el = ele.getBoundingClientRect()
@@ -67,7 +46,7 @@ let isEleInView = (ele) => {
 }
 
 const allRevealEffects = document.querySelectorAll(".reveal-effect")
-console.log({ allRevealEffects})
+console.log({ allRevealEffects })
 
 window.addEventListener("scroll", ev => {
   allRevealEffects.forEach(element => {
@@ -92,9 +71,11 @@ const runCount = (dom, endNum) => {
   const atInterval = setInterval(() => {
     // current++ // current = current + 1  
     
-    if (dom.textContent < endNum) {
-      dom.textContent++ 
-    } 
+    if (current < endNum) {
+      current++ 
+    } else if(current >= endNum) {
+       clearInterval(atInterval)
+    }
     // else {
       // console.log("should end")
       // return clearInterval(atInterval)
@@ -109,6 +90,7 @@ const runCount = (dom, endNum) => {
 
   }, 20);
 }
+ 
 
 allCountNums.forEach(child => {
   const endNum = Number(child.innertext)
