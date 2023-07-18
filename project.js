@@ -67,7 +67,21 @@ let isEleInView = (ele) => {
 }
 
 const allRevealEffects = document.querySelectorAll(".reveal-effect")
-console.log({ allRevealEffects })
+console.log({ allRevealEffects})
+
+window.addEventListener("scroll", ev => {
+  allRevealEffects.forEach(element => {
+    let isRevealActive = element.classList.contains("reveal-effect-active")
+
+    if (isEleInView(element) && !isRevealActive) {
+      element.classList.add("reveal-effect-active")
+    } else if (!isEleInView(element) && isRevealActive) {
+      element.classList.remove("reveal-effect-active")
+    }
+  })
+})
+
+
 
 const allCountNums = document.querySelectorAll(".count-num")
 
@@ -95,19 +109,6 @@ const runCount = (dom, endNum) => {
 
   }, 20);
 }
-
-window.addEventListener("scroll", ev => {
-  allRevealEffects.forEach(element => {
-    let isRevealActive = element.classList.contains("reveal-effect-active")
-
-    if (isEleInView(element) && !isRevealActive) {
-      element.classList.add("reveal-effect-active")
-    } else if (!isEleInView(element) && isRevealActive) {
-      element.classList.remove("reveal-effect-active")
-    }
-  })
-
-})
 
 allCountNums.forEach(child => {
   const endNum = Number(child.innertext)
