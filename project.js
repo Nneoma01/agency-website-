@@ -46,7 +46,24 @@ let isEleInView = (ele) => {
 }
 
 const allRevealEffects = document.querySelectorAll(".reveal-effect")
-console.log({ allRevealEffects })
+
+const runCount = (dom, endNum) => {
+  let current = 0
+  dom.textContent = current
+
+  const atInterval = setInterval(() => {
+
+    if (current < endNum) {
+      current++
+      dom.textContent = current
+    } else if (current >= endNum) {
+      dom.classList.add("count-done")
+      clearInterval(atInterval)
+    }
+  }, 20);
+}
+
+const allCountNums = document.querySelectorAll(".count-num")
 
 window.addEventListener("scroll", ev => {
   allRevealEffects.forEach(element => {
@@ -58,45 +75,18 @@ window.addEventListener("scroll", ev => {
       element.classList.remove("reveal-effect-active")
     }
   })
+
+  allCountNums.forEach(child => {
+    const endNum = Number(child.innerText)
+    const inView = isEleInView(child)
+    let hasCountDone = child.classList.contains("count-done")
+
+    if (inView && !hasCountDone) {
+      console.log("in view")
+      runCount(child, endNum)
+    }
+  })
+
 })
 
 
-
-const allCountNums = document.querySelectorAll(".count-num")
-
-const runCount = (dom, endNum) => {
-  let current = 0
-  dom.textContent = current
-
-  const atInterval = setInterval(() => {
-    // current++ // current = current + 1  
-    
-    if (current < endNum) {
-      current++ 
-    } else if(current >= endNum) {
-       clearInterval(atInterval)
-    }
-    // else {
-      // console.log("should end")
-      // return clearInterval(atInterval)
-    }
-
-    // if (current >= endNum) {
-    //   console.log("should end")
-    //   return clearInterval(atInterval)
-    // } else {
-    //   current++ // current = current + 1  
-    // }
-
-  }, 20);
-}
- 
-
-allCountNums.forEach(child => {
-  const endNum = Number(child.innertext)
-  const inView = isEleInView(child)
-
-  if(inView){
-    runCount(child, endNum)
-  }
-})
