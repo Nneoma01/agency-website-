@@ -10,19 +10,32 @@ headCloseBtn.addEventListener("click", e => {
 })
 
 const screens = document.querySelectorAll("img.screens") // []
+const changeWidth = document.querySelector("body")
 
 const changeScreen = (scAttr) => {
   console.log(`screens would be ${scAttr}`);
   if (scAttr === "auto") {
-    alert("desktop")
+    // alert("desktop")
+    changeWidth.classList.add("body-one")
   } else if (scAttr === "1200px") {
-    alert("laptop")
+    // alert("laptop")
+    changeWidth.classList.add("body-two")
+    // width change to 1200px
   } else if (scAttr === "992px") {
-    alert("tablet")
+    // alert("tablet")
+    // width change to 992px
+    // change lg to md
+    changeWidth.classList.add("body-three")
   } else if (scAttr === "576px") {
-    alert("phone-landscape")
+    // alert("phone-landscape")
+    // width chaneg to 576px
+    // change md to xs
+    changeWidth.classList.add("body-four")
   } else if (scAttr === "480px") {
-    alert("phone-portrait")
+    // alert("phone-portrait")
+    // width change to 480px
+    // change md to xs 
+    changeWidth.classList.add("body-five")
   }
 }
 
@@ -86,7 +99,6 @@ window.addEventListener("scroll", ev => {
       runCount(child, endNum)
     }
   })
-
 })
 
 

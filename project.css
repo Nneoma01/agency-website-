@@ -4,9 +4,24 @@ html{
     /*height: 100vh;*/
 }
 body{
-    width: 100%;
+    /* width: 100%; */
     box-sizing: border-box;
     padding-top: 60px
+}
+.body-one{
+    width: 100%;
+}
+.body-two{
+    width: 1200px;
+}
+.body-three{
+    width: 992px;
+}
+.body-four{
+    width: 576px;
+}
+.body-five{
+    width: 480px;
 }
 a {
     text-decoration: none;
@@ -144,6 +159,10 @@ div.box{
 .bold{
     font-weight: bold;
     line-height: 40px;
+}
+
+.x-space {
+    margin: 0 3rem;
 }
 .flexx{
     display: flex;
@@ -312,10 +331,6 @@ section {
 .client div h1{
     font-weight: bolder;
 }
-.image{
-    width: 120px;
-    height: 120px;
-}
 .clients{
     padding: 50px 0;
 }
@@ -376,7 +391,7 @@ section {
     color: rgb(111, 184, 111);
 }
 .image1{
-    width: 500px;
+    width: 100%;
     height: 500px;
     object-fit: cover;
     object-position:  center;
