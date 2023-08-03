@@ -5,37 +5,33 @@ console.log([headCloseBtn])
 
 headCloseBtn.addEventListener("click", e => {
   headBar.style.display = "none"
-  // headBar.remove()
   document.body.style.paddingTop = 0
 })
 
+/*const menuIcon = document.querySelectorAll(".dash-icon")
+const menuBar = documentquerySelector(".menu-bar")
+
+menuIcon.addEventListener("click", e => {
+  menuIcon.forEach(element => {
+   menuBar.classList.remove(".menu-bar")
+   menuBar.classList.add(".icon")
+  }
+})
+*/
+
+
 const screens = document.querySelectorAll("img.screens") // []
-const changeWidth = document.querySelector("body")
+const bodyDOM = document.querySelector("body")
+const headDOM = document.querySelector(".head-bar")
 
 const changeScreen = (scAttr) => {
   console.log(`screens would be ${scAttr}`);
   if (scAttr === "auto") {
-    // alert("desktop")
-    changeWidth.classList.add("body-one")
-  } else if (scAttr === "1200px") {
-    // alert("laptop")
-    changeWidth.classList.add("body-two")
-    // width change to 1200px
-  } else if (scAttr === "992px") {
-    // alert("tablet")
-    // width change to 992px
-    // change lg to md
-    changeWidth.classList.add("body-three")
-  } else if (scAttr === "576px") {
-    // alert("phone-landscape")
-    // width chaneg to 576px
-    // change md to xs
-    changeWidth.classList.add("body-four")
-  } else if (scAttr === "480px") {
-    // alert("phone-portrait")
-    // width change to 480px
-    // change md to xs 
-    changeWidth.classList.add("body-five")
+    bodyDOM.style.width = "100%"
+    headDOM.style.width = "100%"
+  } else {
+    bodyDOM.style.width = scAttr
+    headDOM.style.width = scAttr
   }
 }
 
@@ -100,5 +96,7 @@ window.addEventListener("scroll", ev => {
     }
   })
 })
+
+
 
 

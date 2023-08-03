@@ -1,29 +1,13 @@
 html{
     padding: 0;
     margin: 0;
-    /*height: 100vh;*/
 }
 body{
-    /* width: 100%; */
     box-sizing: border-box;
-    padding-top: 60px
+    /* padding-top: 70px; */
+    margin: 0 auto;
 }
-.body-one{
-    width: 100%;
-}
-.body-two{
-    width: 1200px;
-}
-.body-three{
-    width: 992px;
-}
-.body-four{
-    width: 576px;
-}
-.body-five{
-    width: 480px;
-}
-a {
+a{
     text-decoration: none;
 }
 .full-height {
@@ -35,18 +19,13 @@ a {
 .head-bar{
     position: fixed;
     top: 0;
-   /* height: 10vh;*/
     width: 100%;
     padding: 15px;
     display: flex;
     justify-content: space-between;
     background-color: whitesmoke;
     cursor: pointer;
-   
 }
-/*#responsive-desktop, #responsive-laptop:hover, #responsive-tablet:hover, #responsive-phone-horizontal:hover, #responsive-phone:hover{
-    background-color: lightskyblue;
-}*/
 img[id^="responsive"]:hover, #responsive-desktop, .close:hover{
     background-color: lightblue;
 }
@@ -54,18 +33,20 @@ img[id^="responsive"]:hover, #responsive-desktop, .close:hover{
     text-decoration: none;
     color: black;
     list-style: none;
-    /* margin-top: 80px; */
 }
 .menu-bar{
-    width: 35%;
-    height: 50px;
+    width: 50%;
+    height: 70px;
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    padding-left: 50px;
     font-size: 1.15rem;
 }
 .menu, .menu-bar a:hover{
     color: gold;
+}
+.menu-bar a{
+    padding-top: 15px;
 }
 .contact {
     background-image: url("https://images01.nicepagecdn.com/a1389d7bc73adea1e1c1fb7e/6f08fcd379775a96a7ab7ce6/positive-business-woman-posing-camera-outdoors.jpg");
@@ -84,7 +65,6 @@ img[id^="responsive"]:hover, #responsive-desktop, .close:hover{
     text-align: center;
 }
 .input-wrapper input, .input-wrapper button{
-    /* height: 40px; */
     padding: 15px;
     width: 100%;
 }
@@ -118,7 +98,6 @@ img[id^="responsive"]:hover, #responsive-desktop, .close:hover{
 div.box{ 
     text-align: center;
     border: 1px solid lightgray;
-    /* margin: 10px; */
    background-color: white;
    padding: 20px 60px;
 }
@@ -151,7 +130,6 @@ div.box{
     text-align: center;
 }
 .division1{
-    /*height: 100vh;*/
     padding: 150px;
     display: flex;
     justify-content: space-around;
@@ -160,7 +138,6 @@ div.box{
     font-weight: bold;
     line-height: 40px;
 }
-
 .x-space {
     margin: 0 3rem;
 }
@@ -178,7 +155,6 @@ div.box{
     height: 60px;
 }
 .division2{
-    /*height: 100vh;*/
     padding: 50px;
     text-align: center;
 }
@@ -187,7 +163,6 @@ div.box{
     line-height: 40px;
 }
 .grid{
-    /* height: 80vh; */
     text-align: center;
 }
 .grid h1{
@@ -245,12 +220,9 @@ div.box{
 .parts{
     display: flex;
     justify-content: space-between;
-    /*width: 100%;
-    height: 80vh;*/
-    padding: 50px 100px 100px 200px;
+    padding-left: 120px;
 }
 .division3{
-    /*height: 50vh;*/
     background-color: rgb(32, 171, 32);
     color: white;
     text-align: center;
@@ -280,7 +252,6 @@ div.box{
 .division4{
     background-color: whitesmoke;
     text-align: center;
-    /*height: 100vh;*/
     padding-top: 40vh;
 }
 .div2{
@@ -303,9 +274,6 @@ section {
     font-size: 2.5rem;
     font-weight: bolder;
 }
-/* span {
-    color: goldenrod;   
-} */
 .image-from{
     font-size: 1rem;
 }
@@ -325,7 +293,6 @@ section {
     color: white;
     background-color: #f1a40e;
     text-align: center;
-    /*height: 60vh;*/
     padding: 0 120px;
 }
 .client div h1{
@@ -339,7 +306,6 @@ section {
     justify-content: space-around;
 }
 .last{
-    /*height: 95vh;*/
     background-image: url("https://images01.nicepagecdn.com/a1389d7bc73adea1e1c1fb7e/32037b0791a95987aececbcd/female-work-brainstorming.jpg");
     background-color: whitesmoke;
     height: 80vh;
@@ -353,7 +319,6 @@ section {
 }
 .inside-last{
     width: 60%;
-    /*height: 60vh;*/
     border: 1px solid white;
     background-color: white;
     text-align: center;
@@ -376,7 +341,6 @@ section {
     font-weight: bolder;
 }  
 .footer{
-    /*height: 30vh;*/
     background-color: rgb(49, 48, 48);
     color: white;
     text-align: center;
@@ -419,5 +383,18 @@ section {
         opacity: 1;
     } 
 }
+
+.icon{
+    width: 100%;
+    display: block;
+    height: 50px;
+    padding: 50px;
+    
+}    
+.side-icon{
+    width: 25%;
+    
+}
+    
 
 
