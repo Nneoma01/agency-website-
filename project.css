@@ -48,6 +48,7 @@ img[id^="responsive"]:hover, #responsive-desktop, .close:hover{
 .menu-bar a{
     padding-top: 15px;
 }
+
 .contact {
     background-image: url("https://images01.nicepagecdn.com/a1389d7bc73adea1e1c1fb7e/6f08fcd379775a96a7ab7ce6/positive-business-woman-posing-camera-outdoors.jpg");
     height: 80vh;
@@ -398,3 +399,31 @@ section {
     
 
 
+
+/* MOBILE CSS */
+.mobile-menu{
+    width: 100%;
+    background-color: rgba(74, 69, 69, 0.5);
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+.menubar{
+    width: 75%;
+    background-color: black;
+    height: 100%;
+    position: relative;
+    padding-right: 10px;
+ 
+
+  
+}
+#closeBtn{
+    /* padding: 15px; */
+    color: white;
+    font-size: 45px;
+    
+
+}
