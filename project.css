@@ -423,7 +423,15 @@ section {
 #closeBtn{
     /* padding: 15px; */
     color: white;
-    font-size: 45px;
-    
-
+    font-size: 45px;  
+}
+.menu-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu-item{
+    color: white;
+    padding: 5px 0;
 }
