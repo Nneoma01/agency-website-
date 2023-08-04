@@ -408,6 +408,7 @@ section {
     top: 0;
     left: 0;
     position: fixed;
+    display: none;
 }
 
 .menubar{
@@ -416,9 +417,6 @@ section {
     height: 100%;
     position: relative;
     padding-right: 10px;
- 
-
-  
 }
 #closeBtn{
     /* padding: 15px; */

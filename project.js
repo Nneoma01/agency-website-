@@ -8,17 +8,6 @@ headCloseBtn.addEventListener("click", e => {
   document.body.style.paddingTop = 0
 })
 
-/*const menuIcon = document.querySelectorAll(".dash-icon")
-const menuBar = documentquerySelector(".menu-bar")
-
-menuIcon.addEventListener("click", e => {
-  menuIcon.forEach(element => {
-   menuBar.classList.remove(".menu-bar")
-   menuBar.classList.add(".icon")
-  }
-})
-*/
-
 
 const screens = document.querySelectorAll("img.screens") // []
 const bodyDOM = document.querySelector("body")
@@ -97,6 +86,13 @@ window.addEventListener("scroll", ev => {
   })
 })
 
+const mobileMenu = document.querySelector(".mobile-menu")
 
+function showMobileMenu(){
+  mobileMenu.style.display = "block";
+}
 
+const hideMobileMenu = () => {
+  mobileMenu.style.display = "none"
+} 
 

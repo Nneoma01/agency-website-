@@ -45,15 +45,15 @@
   </div>
 
   <div class="container d-block d-lg-none">
-    <button onclick="showMobileMenu">
+    <button onclick="showMobileMenu()">
       <i class="bi bi-list"></i>
     </button>
   </div>
 
-  <div class="mobile-menu d-none">
+  <div class="mobile-menu">
     <div class="menubar">
       <div class="text-end">
-        <i id="closeBtn" class="bi bi-x"></i>
+        <i id="closeBtn" class="bi bi-x" onclick="hideMobileMenu()"></i>
       </div>
       <div class="menu-items">
         <a class="menu-item" href="#">HOME</a>
