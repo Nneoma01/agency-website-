@@ -401,15 +401,57 @@ section {
 
 
 /* MOBILE CSS */
-.mobile-menu{
+.mobile-menu {
     width: 100%;
     background-color: rgba(74, 69, 69, 0.5);
     height: 100vh;
     top: 0;
     left: 0;
     position: fixed;
-    display: none;
+    visibility: hidden;
 }
+
+.mobile-menu.active {
+    animation: 0.5s reveal;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+    /* transition: transform ease-in; */
+    /* transform: translateX(12rem); */
+}
+
+@keyframes reveal {
+    from{
+     visibility: hidden;
+     width: 0%;
+    }
+    to {
+      visibility: visible;
+      width: 100%;
+    }
+}
+.mobile-menu.non-active {
+    animation: 0.5s non-reveal;
+    animation-fill-mode: forwards;
+    animation-direction: backwards;
+    animation-timing-function: ease-in;
+    /* transition: transform ease-in; */
+    /* transform: translateX(12rem); */
+}
+
+@keyframes non-reveal {
+    from{
+     visibility: visible;
+     width: 100%;
+    }
+    to {
+      visibility: hidden;
+      width: 0%;
+    }
+  }
+
+
+  
 
 .menubar{
     width: 75%;

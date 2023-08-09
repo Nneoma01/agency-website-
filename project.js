@@ -87,12 +87,13 @@ window.addEventListener("scroll", ev => {
 })
 
 const mobileMenu = document.querySelector(".mobile-menu")
+const menuBar = document.querySelector(".menubar")
 
 function showMobileMenu(){
-  mobileMenu.style.display = "block";
+  mobileMenu.classList.add("active");
 }
 
 const hideMobileMenu = () => {
-  mobileMenu.style.display = "none"
+  mobileMenu.classList.add("non-active")
 } 
 
