@@ -461,10 +461,17 @@ section {
     padding-right: 10px;
 }
 #closeBtn{
-    /* padding: 15px; */
     color: white;
     font-size: 45px;  
 }
+#icon-btn{
+    font-size: 40px;
+    border: none;
+    background: none;
+    padding: 5px;
+}
+
+
 .menu-items{
     display: flex;
     flex-direction: column;
