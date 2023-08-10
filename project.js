@@ -91,9 +91,11 @@ const menuBar = document.querySelector(".menubar")
 
 function showMobileMenu(){
   mobileMenu.classList.add("active");
+  mobileMenu.classList.remove("non-active")
 }
 
 const hideMobileMenu = () => {
   mobileMenu.classList.add("non-active")
+  mobileMenu.classList.remove("active")
 } 
 
