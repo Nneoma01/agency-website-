@@ -8,8 +8,7 @@ headCloseBtn.addEventListener("click", e => {
   document.body.style.paddingTop = 0
 })
 
-
-const screens = document.querySelectorAll("img.screens") // []
+const screens = document.querySelectorAll("img.screens")
 const bodyDOM = document.querySelector("body")
 const headDOM = document.querySelector(".head-bar")
 
@@ -89,7 +88,7 @@ window.addEventListener("scroll", ev => {
 const mobileMenu = document.querySelector(".mobile-menu")
 const menuBar = document.querySelector(".menubar")
 
-function showMobileMenu(){
+function showMobileMenu() {
   mobileMenu.classList.add("active");
   mobileMenu.classList.remove("non-active")
 }
@@ -97,5 +96,5 @@ function showMobileMenu(){
 const hideMobileMenu = () => {
   mobileMenu.classList.add("non-active")
   mobileMenu.classList.remove("active")
-} 
+}
 

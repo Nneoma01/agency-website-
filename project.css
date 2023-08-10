@@ -4,7 +4,6 @@ html{
 }
 body{
     box-sizing: border-box;
-    /* padding-top: 70px; */
     margin: 0 auto;
 }
 a{
@@ -206,8 +205,7 @@ div.box{
 }
 .links{
     color: rgb(23, 142, 23);
-    width: 40px;
-    height: 40px;
+    font-size: 40px;
 }
 .span{
     font-weight: bolder;
@@ -389,12 +387,10 @@ section {
     width: 100%;
     display: block;
     height: 50px;
-    padding: 50px;
-    
+    padding: 50px;   
 }    
 .side-icon{
-    width: 25%;
-    
+    width: 25%;  
 }
     
 
@@ -416,8 +412,6 @@ section {
     animation-fill-mode: forwards;
     animation-direction: normal;
     animation-timing-function: ease-in;
-    /* transition: transform ease-in; */
-    /* transform: translateX(12rem); */
 }
 
 @keyframes reveal {
@@ -450,9 +444,6 @@ section {
     }
   }
 
-
-  
-
 .menubar{
     width: 75%;
     background-color: black;
@@ -470,8 +461,6 @@ section {
     background: none;
     padding: 5px;
 }
-
-
 .menu-items{
     display: flex;
     flex-direction: column;
